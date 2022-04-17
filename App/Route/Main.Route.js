@@ -12,7 +12,9 @@ module.exports = (app) => {
     router.post("/email_verify",userController.email_verify);
     
     router.post("/multi_rating_submit",userController.multi_rating_submit);
+    
     router.get("/get_response",responseController.get_response);
+    
     router.post("/getprofile",userController.getprofile);
     router.post("/updateprofile",userController.updateprofile);
     router.post("/changepassword",userController.changepassword);
