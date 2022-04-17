@@ -2,10 +2,15 @@ const http = require('http');
 
 const port = process.env.PORT || 8080;
 const express = require('express');
+
 var bodyParser = require('body-parser');
+
 const cors=require('cors');
+
 const app = express();
+
 app.use(cors());
+
 app.use(bodyParser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
